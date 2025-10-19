@@ -1,1 +1,11 @@
-hello arslan
+pipeline {
+    agent any
+
+    stages {
+        stage('jenkinsfile') {
+            steps {
+                echo 'i am jenkinsfile'
+            }
+        }
+    }
+}
