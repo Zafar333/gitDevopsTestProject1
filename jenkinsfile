@@ -7,5 +7,10 @@ pipeline {
                 echo 'i am jenkinsfile'
             }
         }
+stage('hello') {
+            steps {
+                echo 'i am hello'
+            }
+        }
     }
 }
