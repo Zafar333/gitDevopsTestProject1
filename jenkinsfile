@@ -1,5 +1,8 @@
 pipeline {
     agent any
+       parameters {
+  string defaultValue: 'arslan', description: 'this is name parameter', name: 'name'
+}
 
     stages {
         stage('jenkinsfile') {
@@ -7,9 +10,9 @@ pipeline {
                 echo 'i am jenkinsfile'
             }
         }
-stage('hello') {
+stage('parameters') {
             steps {
-                echo 'i am hello'
+                echo 'i am ${params.name}'
             }
         }
     }
