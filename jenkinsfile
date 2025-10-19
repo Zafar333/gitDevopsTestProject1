@@ -12,7 +12,7 @@ pipeline {
         }
 stage('parameters') {
             steps {
-                echo 'i am ${params.name}'
+                echo 'i am ${name}'
             }
         }
     }
